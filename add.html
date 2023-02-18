@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Search Info</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/add.css">
+
+	</head>
+
+	<body>
+
+
+		<section class="centerDataInput">
+
+
+			<h5 class="haderText">Department of Shipping</h5>
+
+			<form class="formClass" method="post" action="" enctype="multipart/form-data">				
+
+				<div class="priceAndFree">
+					<div class="genderDiv">
+						<p style="color: green; padding-bottom: 5px;">Certificate <span style="color: red;">*</span></p>
+						<label><input id="Driver" type="radio" name="Certificate" value="Driver"> Driver</label>
+						<label><input id="Master" type="radio" name="Certificate" value="Master"> Master</label>
+					</div>					
+				</div>
+
+				<div class="priceAndFree driverPoient">
+					<div class="genderDiv">
+						<p style="color: green; padding-bottom: 5px;">Certificate Type <span style="color: red;">*</span></p>
+						<label><input id="DriverClass1" type="radio" name="CertificateTypeDriver" value="DriverClass1"> Inland Driver Class1</label>
+						<label><input id="DriverClass2" type="radio" name="CertificateTypeDriver" value="DriverClass2"> Inland Driver Class2</label>
+						<label><input id="DriverClass3" type="radio" name="CertificateTypeDriver" value="DriverClass3"> Inland Driver Class3</label>
+					</div>					
+				</div>
+
+				<div class="priceAndFree masterPoient">
+					<div class="genderDiv">
+						<p style="color: green; padding-bottom: 5px;">Certificate Type <span style="color: red;">*</span></p>
+						<label><input id="MasterClass1" type="radio" name="CertificateTypeMaster" value="MasterClass1"> Inland Master Class1</label>
+						<label><input id="MasterClass2" type="radio" name="CertificateTypeMaster" value="MasterClass2"> Inland Master Class2</label>
+						<label><input id="MasterClass3" type="radio" name="CertificateTypeMaster" value="MasterClass3"> Inland Master Class3</label>
+					</div>					
+				</div>
+
+
+				<div id="inputFromDiv">
+					<label class="inputBoxSearch"><input type="hidden" name="selectTypeValueInput" id="selectTypeValueInput"></label>
+					<label class="inputBoxSearch"><input id="searchInputName" type="text" name="InputYourName" placeholder="Enter Your Name"></label>
+
+					<label class="inputBoxSearch"><input id="searchInputFatherName" type="text" name="InputYourName" placeholder="Enter Your Father Name"></label>
+					<label class="inputBoxSearch"><input id="searchInputMotherName" type="text" name="InputYourName" placeholder="Enter Your Mother Name"></label>
+
+					<label class="inputBoxSearch"><input id="searchInputPhoneNumber" type="number" name="InputPhoneNumber" placeholder="Enter Phone Number"></label>
+					<label class="inputBoxSearch"><input id="searchInputNid" type="number" name="InputNidNumber" placeholder="Enter Nid Number"></label>
+
+					<label class="inputBoxSearch"><input id="searchInputDateBarth" type="date" name="InputdateBarth" placeholder="Enter Your Date of Barth"></label>
+					<label class="inputBoxSearch"><input id="searchInputAddress" type="text" name="InputYourName" placeholder="Enter Your Address"></label>
+
+					<div class="profileImage">
+						<div id="imageUpload" class="uploadBtn" title="Images">
+							<i class="fa-solid fa-file-image"></i>
+							<input type="file" name="images" id="papleImage" class="papleImage">
+						</div>
+
+						<label class="inputBoxSearch"><input id="papleImageName" type="text" name="papleImageName" placeholder="Image Name"></label>
+
+						<div class="imageViewDiv">
+							<img src="images/image.jpg">
+						</div>
+					</div>
+
+					<div class="profileImage">
+						<div id="imageUpload" class="uploadBtn" title="Images">
+							<i class="fa-solid fa-file-circle-plus"></i>
+							<input type="file" name="images" id="papleImage" class="papleImage">
+						</div>
+
+						<label class="inputBoxSearch"><input id="papleImageName" type="text" name="papleImageName" placeholder="File/Image Name"></label>
+
+						<div class="imageViewDiv">
+							<img src="images/image.jpg">
+						</div>
+					</div>
+
+				</div>
+
+				
+
+				<input type="submit" class="button" name="AddBtn" id="updateBtn" value="Add">
+				<a href="index.html" class="button resetBtn">Search Data</a>
+			</form>
+
+		</section>
+
+
+	<script src="js/add.js"></script>
+	</body>
+</html>
